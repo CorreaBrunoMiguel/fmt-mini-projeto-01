@@ -1,3 +1,5 @@
+var medias = [];
+
 window.onload = () => {
   let aluno = {};
 
@@ -18,3 +20,32 @@ window.onload = () => {
   let matFav = document.getElementById("mat-fav-aluno");
   matFav.innerHTML = aluno.materiaFavorita;
 };
+
+function addRow() {
+  var table = document.getElementById("tabela-notas");
+  var row = table.insertRow(-1);
+  var sum = 0;
+  for (var i = 0; i < 6; i++) {
+    var cell = row.insertCell(i);
+    var value;
+    switch (i) {
+      case 0:
+        value = prompt("Matéria: ");
+        cell.innerHTML = value;
+        break;
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+        value = parseFloat(prompt(`Nota ${i}: `));
+        cell.innerHTML = value.toFixed(2);
+        sum += value;
+        break;
+      case 5:
+        let media = (sum / 4)
+        cell.innerHTML = media.toFixed(2);
+        medias.push(media)
+        break;
+    }
+  }
+}

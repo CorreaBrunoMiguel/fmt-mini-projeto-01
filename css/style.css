@@ -110,6 +110,7 @@ body {
 .notas-aluno table td{
     border: 2px solid black;
     padding: .3rem;
+    text-align: center;
 }
 
 /* Média Geral / Média Max */
