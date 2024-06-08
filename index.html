@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    
+    loadInfo();
+    
     <!-- Cabeçalho -->
     <header class="header">
         <h1 class="titulo">
-            Dados do Aluno: <span class="nome-aluno"></span>
+            Dados do Aluno
         </h1>
     </header>
 
@@ -24,11 +26,11 @@
         </h2>
 
         <div class="dados-aluno">
-            <p id="nome-aluno">Nome: <span class="nome-aluno"></span></p>
-            <p id="idade-aluno">Idade: <span class="idade-aluno"></span></p>
-            <p id="serie-aluno">Série: <span class="serie-aluno"></span></p>
-            <p id="escola-aluno">Escola: <span class="escola-aluno"></span></p>
-            <p id="mat-fav-aluno">Matéria Favorita: <span class="mat-fav-aluno"></span></p>
+            <p class="nome-aluno">Nome: <span id="nome-aluno"></span></p>
+            <p class="idade-aluno">Idade: <span id="idade-aluno"></span></p>
+            <p class="serie-aluno">Série: <span id="serie-aluno"></span></p>
+            <p class="escola-aluno">Escola: <span id="escola-aluno"></span></p>
+            <p class="mat-fav-aluno">Matéria Favorita: <span id="mat-fav-aluno"></span></p>
         </div>
 
         <!-- Tabela Notas -->
@@ -81,5 +83,8 @@
             </ul>
         </div>
     </section>
+
+    <!-- JS main -->
+     <script src="js/main.js"></script>
 </body>
 </html>
