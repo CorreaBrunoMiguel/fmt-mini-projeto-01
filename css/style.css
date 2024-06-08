@@ -1,0 +1,131 @@
+:root{
+    --bg-color: #dce0e6;
+    --sec-bg-color: #9fbcd8;
+    --txt-color: #070000;
+    --main-color: #cdd3d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--sec-bg-color);
+    color: var(--txt-color);
+}
+
+/*-----------*/
+/* Cabeçalho */
+/*-----------*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .8rem 10%;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2.7rem;
+}
+
+/* Corpo */
+
+.info-aluno {
+    width: 96%;
+    min-height: 100vh;
+    margin: 4.8rem auto;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.info-aluno h2 {
+    font-size: 2rem ;
+    text-align: left;
+    padding: 1.7rem 3rem;
+}
+
+/* Dados Aluno */ 
+
+.dados-aluno {
+    margin-left: 3rem;
+}
+
+.dados-aluno p {
+    font-size: 1.6rem;
+    padding-bottom:.5rem;
+    font-weight: 700;
+}
+
+/* Tabela de notas */
+
+.notas-aluno .info-tabela{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notas-aluno .info-tabela button {
+    margin-right: 2.7rem;
+    background-color: var(--sec-bg-color);
+    padding: 0 1rem;
+    height: 2.2rem;
+    border-radius: 5px;
+}
+
+.notas-aluno .info-tabela button:hover{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.notas-aluno table{
+    font-size: 1.2rem;
+    width: 96%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.notas-aluno table th {
+    border: 2px solid black;
+    padding: .3rem;
+    background-color: var(--main-color);
+}
+
+.notas-aluno table td{
+    border: 2px solid black;
+    padding: .3rem;
+}
+
+/* Média Geral / Média Max */
+
+.media-geral, .media-max{
+    margin: 20px auto;
+    width: 95%;
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+
+.media-geral h2, .media-max h2 {
+    padding: 3px 9px;
+}
+
+.media-geral p, .media-max p {
+    padding: 4px 9px;
+    font-size: 1.4rem;
+}

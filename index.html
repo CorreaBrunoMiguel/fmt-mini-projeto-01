@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados - Aluno</title>
+
+    <!-- CSS Básico -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1 class="titulo">
+            Dados do Aluno: <span class="nome-aluno"></span>
+        </h1>
+    </header>
+
+    <!-- Infos Alunos -->
+    <section class="info-aluno">
+        <h2>
+            Informações do Aluno
+        </h2>
+
+        <div class="dados-aluno">
+            <p id="nome-aluno">Nome: <span class="nome-aluno"></span></p>
+            <p id="idade-aluno">Idade: <span class="idade-aluno"></span></p>
+            <p id="serie-aluno">Série: <span class="serie-aluno"></span></p>
+            <p id="escola-aluno">Escola: <span class="escola-aluno"></span></p>
+            <p id="mat-fav-aluno">Matéria Favorita: <span class="mat-fav-aluno"></span></p>
+        </div>
+
+        <!-- Tabela Notas -->
+        <div class="notas-aluno">
+            <div class="info-tabela">
+                <h2>
+                    Notas das Matérias
+                </h2>
+                <button type="button" onclick="addRow()">Adicionar Matéria</button>
+            </div>
+
+            <table id="tabela-notas">
+                <thead id="cabecalho-tab">
+                    <th>Matéria</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Nota 4</th>
+                    <th>Média</th>
+                </thead>
+                <tbody id="corpo-tab">
+
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Média Geral -->
+        <div class="media-geral">
+            <h2>
+                Média Geral do Aluno
+            </h2>
+            <p>
+                A média geral do aluno é <spam class="media-geral"></spam>
+            </p>
+        </div>
+
+        <!-- Média Max -->
+        <div class="media-max">
+            <h2>
+                Maior Média entre as Matérias
+            </h2>
+            <p>
+                A maior média entre as matérias é <spam class="media-geral"></spam>
+            </p>
+        </div>
+
+        <div class="lista-alunos">
+            <ul id="lista">
+
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
