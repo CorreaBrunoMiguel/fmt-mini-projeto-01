@@ -3,7 +3,7 @@ var medias = [];
 function atualizarMediaGeral(){
   let mediaGeral = document.getElementById("media-geral")
   mediaGeral.innerHTML = medias.reduce(
-    (prev, cur) => ((prev + cur)/2).toFixed(2)
+    (valorA, valorB) => ((valorA +valorBr)/2).toFixed(2)
   )
 }
 
