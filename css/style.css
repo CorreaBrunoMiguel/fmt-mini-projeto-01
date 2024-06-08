@@ -94,7 +94,7 @@ body {
 }
 
 .notas-aluno table{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 96%;
     margin: 0 auto;
     border: 2px solid black;
@@ -110,6 +110,13 @@ body {
 .notas-aluno table td{
     border: 2px solid black;
     padding: .3rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.notas-aluno table td:first-child{
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 
 /* Média Geral / Média Max */
